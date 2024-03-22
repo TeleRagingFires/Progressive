@@ -1,36 +1,32 @@
-# CVLNet
+# A Progressive-learning-based Channel Prediction within Phase Noise of Independent Oscillators
 ## Overview
-This is a repository for CVLNet
-The paper corresponding to this code is now early access [CVLNet_paper](https://ieeexplore.ieee.org/document/9729774).
-Here we will provide the test script and trained model to support reviewer to validate our work.
-
-
+This is a repository for possible publication.
+#### A. Abstract
+The outdated downlink channel state information (CSI) contaminated by phase noise (PN) from independent local oscillators (LOs) poses a significant challenge to practical Massive Multiple-Input Multiple-Output (MIMO) Orthogonal Frequency Division Multiplexing (OFDM) systems. In this letter, we introduce a novel progressive-learning-based downlink channel prediction scheme incorporating PN compensation as a prerequisite for rebuilding the temporal correlation for channel coefficient predictions. The proposed approach is evaluated under various user equipment (UE) mobility scenarios, PN contamination
+levels, and CSI delay settings, demonstrating superior predictive performance and link-level efficacy. These results position it as a viable solution for real-world applications.
+#### B. Proposed Modules
+Once the manuscript is ready for early access, more details about this work will be provided.
 
 ## Requirements
-To use this project, you need to ensure the following requirements are installed.
-
+No special requirements
 - Python >= 3.7
-- Tersorflow version we recommand 1.12.0
-- Deep complex Network libaray: pip install keras-complex (supports TF1.13.0 at present)
+- For the pytorch version, we used 1.10.2+cu102, yet it is not mandatory.
 
 
-## Project Preperation
-#### A. Dataset
+## Project Details
+#### A. Experiment Setup
 
-The channel state information (CSI) matrix is generated from [COST2100](https://ieeexplore.ieee.org/document/6393523) model. Chao-Kai Wen and Shi Jin group provides a pre-processed version of COST2100 dataset in [Google Drive](https://drive.google.com/drive/folders/1_lAMLk_5k1Z8zJQlTr5NRnSD6ACaNRtj?usp=sharing), which is easier to use for the CSI feedback task; You can also download it from [Baidu Netdisk](https://pan.baidu.com/s/1Ggr6gnsXNwzD4ULbwqCmjA). The dataset path in our test script will be reserved for your local reproduction and validation.
-
-You can generate your own dataset according to the [open source library of COST2100](https://github.com/cost2100/cost2100) as well. The details of data pre-processing can be found in our paper.
-
+The efficacy of the proposed progressive-learning-based framework is substantiated through comprehensive experimentation encompassing two UE mobility and CSI processing delay settings under two PN contamination levels. The dataset generation setup is presented in the following table.
+![alt test](https://github.com/TeleRagingFires/Progressive/blob/8672a90f3384fa7373b9f4b89a13dd5506888e7d/Data.jpg)
 
 ## Results and Reproduction
 
-#### A. CVLNet Evaluation
-![alt test][(https://github.com/TeleRagingFires/CVLNet/blob/main/TOTAL.png?raw=true](https://github.com/TeleRagingFires/Progressive/blob/139c7807a5f770da2aab967a940c2844bb750d52/Result.jpg))
-#### B. Overall result in Paper
-![alt test](https://github.com/TeleRagingFires/CVLNet/blob/main/T1.png?raw=true)
+#### Evaluation Results
+The Table summarizes the overall performance with common prediction quality matrices composing the mean square error (MSE), the mean absolute error (MAE), the structure similarity (SSIM), and the cosine similarity rho.
+
+To further verify the progressive learning-based framework and its impact on the system, a singular value decomposition (SVD) baseband precoding is conducted to simulate the average spectral efficiency R in a given receiver noise power.
+![alt test](https://github.com/TeleRagingFires/Progressive/blob/139c7807a5f770da2aab967a940c2844bb750d52/Result.jpg)
 
 
 ## Acknowledgment
-
-The very creative Complex-valued network components can be found here [Keras-complex](https://github.com/JesperDramsch/keras-complex). This repository is modified from the [CRNet open source code](https://github.com/Kylin9511/CRNet). Thanks Zhilin for his amazing work.
-Thanks Chao-Kai Wen and Shi Jin group for providing the pre-processed COST2100 dataset, you can find their related work named CsiNet in [Github-Python_CsiNet](https://github.com/sydney222/Python_CsiNet). 
+Once the manuscript is ready for early access, more details about this work will be provided.
