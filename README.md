@@ -17,7 +17,9 @@ No special requirements
 #### A. Experiment Setup
 
 The efficacy of the proposed progressive-learning-based framework is substantiated through comprehensive experimentation encompassing two UE mobility and CSI processing delay settings under two PN contamination levels. The dataset generation setup is presented in the following table.
-![alt test](https://github.com/TeleRagingFires/Progressive/blob/8672a90f3384fa7373b9f4b89a13dd5506888e7d/Data.jpg)
+<p align="center">
+  <img src = "https://github.com/TeleRagingFires/Progressive/blob/8672a90f3384fa7373b9f4b89a13dd5506888e7d/Data.jpg" width="500">
+</p>
 
 ## Results and Reproduction
 
@@ -25,8 +27,7 @@ The efficacy of the proposed progressive-learning-based framework is substantiat
 The Table summarizes the overall performance with common prediction quality matrices composing the mean square error (MSE), the mean absolute error (MAE), the structure similarity (SSIM), and the cosine similarity rho.
 
 To further verify the progressive learning-based framework and its impact on the system, a singular value decomposition (SVD) baseband precoding is conducted to simulate the average spectral efficiency R in a given receiver noise power.
-![alt test](https://github.com/TeleRagingFires/Progressive/blob/139c7807a5f770da2aab967a940c2844bb750d52/Result.jpg)
-
+![alt text](https://github.com/TeleRagingFires/Progressive/blob/139c7807a5f770da2aab967a940c2844bb750d52/Result.jpg)
 
 ## Acknowledgment
 Once the manuscript is ready for early access, more details about this work will be provided.
