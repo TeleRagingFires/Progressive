@@ -1,6 +1,7 @@
 # A Progressive-learning-based Channel Prediction within Phase Noise of Independent Oscillators
 ## Overview
-This is a repository for possible publication.
+This is a repository for A Progressive-learning-based Channel Prediction within Phase Noise of Independent Oscillators [Paper](https://ieeexplore.ieee.org/document/10497114) on IEEE Wireless Communications Letters. 
+
 #### A. Abstract
 The outdated downlink channel state information (CSI) contaminated by phase noise (PN) from independent local oscillators (LOs) poses a significant challenge to practical Massive Multiple-Input Multiple-Output (MIMO) Orthogonal Frequency Division Multiplexing (OFDM) systems. In this letter, we introduce a novel progressive-learning-based downlink channel prediction scheme incorporating PN compensation as a prerequisite for rebuilding the temporal correlation for channel coefficient predictions. The proposed approach is evaluated under various user equipment (UE) mobility scenarios, PN contamination
 levels, and CSI delay settings, demonstrating superior predictive performance and link-level efficacy. These results position it as a viable solution for real-world applications.
